@@ -1,0 +1,111 @@
+<!-- <ng-container ></ng-container>
+[(ngModel)]="componentProperty"  // Two-way data binding
+[propertyName]="componentProperty" // Input property binding
+{{componentProperty}} // Interpolation-->
+
+<div class="center-content">
+  <!--<div class="center-content" style="background-color: #001529;"></div>-->
+  <mat-card class="login-card">
+    <mat-card-header>
+      <mat-card-title class="login-card__title">Nexus UI</mat-card-title>
+      <mat-card-subtitle class="login-card__subtitle">Autenticação</mat-card-subtitle>
+      <mat-icon svgIcon class="login-card__logo">login</mat-icon>
+      <!--<mat-icon matSuffix>person</mat-icon>-->
+    </mat-card-header>
+    <mat-card-content>
+      <!-- BEM | OCSCSS-->
+      <mat-tab-group class="login-card__tab-group" color="inherit">
+        <mat-tab label="Entrar">
+          <mat-form-field class="login-card__full-width">
+            <mat-label>Usuário</mat-label>
+            <input type="text" matInput placeholder="Usuário" value="" [(ngModel)]="log_usuario" />
+            <mat-icon matSuffix>person</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="login-card__full-width">
+            <mat-label>Senha</mat-label>
+            <input type="Password" matInput placeholder="Senha" [(ngModel)]="log_password" />
+            <mat-icon matSuffix>lock</mat-icon>
+          </mat-form-field>
+          <!-- <p class="example-card__forgot-password">Esqueceu sua senha?</p>
+          <button mat-button (click)="onForgotPassword()">Esqueceu a senha?</button>-->
+          <p class="login-card__forgot-password" (click)="forgotPassword()">Esqueceu sua senha?</p>
+          <button mat-raised-button color="" class="login-card__button" (click)="login()">Login</button>
+          <!--<button mat-button color="" class="login-card__button" (click)="login()">Login</button>-->
+        </mat-tab>
+        <mat-tab label="Registrar">
+          <mat-form-field class="login-card__full-width">
+            <mat-label>Usuário</mat-label>
+            <input type="text" matInput placeholder="Usuário" value="" [(ngModel)]="reg_usuario" />
+            <mat-icon matSuffix>person</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="login-card__full-width">
+            <mat-label>Senha</mat-label>
+            <input type="Password" matInput placeholder="Senha" [(ngModel)]="reg_password" />
+            <mat-icon matSuffix>lock</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="login-card__full-width">
+            <mat-label>Confirmar Senha</mat-label>
+            <input type="Password" matInput placeholder="Senha" [(ngModel)]="reg_confirm_password" />
+            <mat-icon matSuffix>lock</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="login-card__full-width">
+            <mat-label>Login do Administrador</mat-label>
+            <input type="text" matInput placeholder="Login do Administrador" [(ngModel)]="admin_login" />
+            <mat-icon matSuffix>person</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="login-card__full-width">
+            <mat-label>Senha do Administrador</mat-label>
+            <input type="Password" matInput placeholder="Senha do Administrador" [(ngModel)]="admin_password" />
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+          <button mat-raised-button color="" class="login-card__button" (click)="register()">Registrar</button>
+          <!--<button mat-button color="" class="login-card__button" (click)="register()">Registrar</button>-->
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<!--
+    BEM e OCSCSS são metodologias que podem ser usadas tanto no HTML quanto no CSS para tornar o código mais organizado e escalável.
+    Elas ajudam a evitar conflitos de estilo e a tornar o código mais fácil de entender e manter.
+
+    BEM divide o código em blocos, elementos e modificadores, enquanto OCSCSS divide o código em objetos,
+    componentes e módulos. Ambas as abordagens enfatizam a reutilização de estilos em todo o código e o
+    uso de nomes de classe descritivos e bem estruturados para facilitar a compreensão do código.
+
+    No exemplo, example-card__title é um nome de classe que segue a convenção BEM.
+    O bloco é example-card e o elemento é title. O uso de um sublinhado entre o bloco
+    e o elemento é uma convenção comum em BEM para separar os nomes de classe e torná-los mais legíveis.
+
+
+    BEM (Block Element Modifier) e OCSCSS (Object-Oriented CSS) são metodologias para escrever
+    CSS de forma mais organizada e escalável. Elas ajudam a evitar conflitos de estilo e a
+    tornar o código mais fácil de entender e manter.
+
+    BEM divide o código em blocos, elementos e modificadores. Um bloco é uma seção
+    independente da página, como um cabeçalho ou um rodapé. Um elemento é uma parte
+    de um bloco, como um botão ou um campo de entrada. Um modificador é uma variação
+    de um bloco ou elemento, como um botão com uma cor diferente ou um campo de entrada
+    com um tamanho maior.
+
+    OCSCSS é uma abordagem semelhante que enfatiza a reutilização de estilos em todo o código.
+    Em vez de dividir o código em blocos, elementos e modificadores, OCSCSS divide o código em
+    objetos, componentes e módulos. Um objeto é uma parte independente do código que pode ser
+    reutilizada em vários lugares, como um botão ou um ícone. Um componente é uma combinação
+    de objetos que forma uma seção da página, como um cabeçalho ou um rodapé. Um módulo é
+    uma combinação de componentes que forma uma página completa.
+
+    O uso de BEM ou OCSCSS ajuda a tornar o código CSS mais modular e fácil de entender e manter.
+    Ao usar nomes de classe descritivos e bem estruturados, é mais fácil entender qual estilo
+    se aplica a qual elemento da página.
+
+    No exemplo, `example-card__title` é um nome de classe que segue a convenção BEM.
+    O bloco é `example-card` e o elemento é `title`. O uso de um sublinhado entre o
+    bloco e o elemento é uma convenção comum em BEM para separar os nomes de classe.
+
+-->
+
+
+
+

@@ -1,0 +1,342 @@
+/*
+// Cores personalizadas
+$primary-color: #007bff;
+$accent-color: #ff9800;
+$warn-color: #f44336;
+*/
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+/*Flexbox para centralizar o conteúdo
+vertical e horizontalmente na div com a classe "center-content" */
+
+.login-card {
+  max-width: 320px;
+  margin: 16px auto;
+  padding: 32px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+
+  &__logo {
+    margin-left: auto;
+  }
+
+  &__title {
+    color: rgba(0, 0, 0, 0.87);
+  }
+
+  &__subtitle {
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  &__tab-group {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  &__full-width {
+    margin-top: 8px;
+    width: 100%;
+
+    input {
+      width: 100%;
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+
+    mat-icon {
+      color: #001529;
+      //color: #3F51B5;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    color: white;
+    //background-color: #3F51B5;
+    background-color: #001529;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    padding: 1px;
+  }
+  /*
+  &__example-card__button:hover{
+    background-color: #1890ff;
+  }*/
+
+  &__logo:hover {
+    margin-left: auto;
+    color: #3f51b5;
+  }
+
+  .login-card__forgot-password:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+p {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #001529;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*
+:host ::ng-deep {
+  .mat-tab-label {
+    background-color: #001529 !important;
+    border-radius: 0.5rem;
+  }
+}
+
+
+/*
+.card-title {
+  color: rgba(0,0,0,.87);
+}
+*/
+
+/*Codigo 1
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.example-card {
+  max-width: 320px;
+  margin: 16px auto;
+  padding: 32px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+
+  &__title {
+    color: rgba(0,0,0,.87);
+  }
+
+  &__subtitle {
+    color: rgba(0,0,0,.54);
+  }
+
+  &__tab-group {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  &__full-width {
+    margin-top: 8px;
+    width: 100%;
+
+    input {
+      width: 100%;
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+
+    mat-icon {
+      color: #3F51B5;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    color: white;
+    background-color: #3F51B5;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    padding: 1px;
+  }
+}
+
+p {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #3F51B5;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-title {
+  color: rgba(0,0,0,.87);
+}
+
+*/
+
+/* Codigo 2
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.example-card {
+  max-width: 320px;
+  margin: 16px auto;
+  padding: 32px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+
+  &__title {
+    color: rgba(0,0,0,.87);
+  }
+
+  &__subtitle {
+    color: rgba(0,0,0,.54);
+  }
+
+  &__tab-group {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  &__full-width {
+    margin-top: 8px;
+    width: 100%;
+
+    input {
+      width: 100%;
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+
+    mat-icon {
+      color: #3F51B5;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    color: white;
+    background-color: #3F51B5;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    padding: 1px;
+  }
+}
+
+p {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #3F51B5;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card-title {
+  color: rgba(0,0,0,.87);
+}
+*/
+
+/*.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.example-card {
+  max-width: 320px;
+  margin: 16px auto;
+  padding: 32px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+
+  &__title {
+    color: rgba(0,0,0,.87);
+  }
+
+  &__subtitle {
+    color: rgba(0,0,0,.54);
+  }
+
+  &__tab-group {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  &__full-width {
+    margin-top: 8px;
+    width: 100%;
+
+    input {
+      width: 100%;
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+
+    mat-icon {
+      color: #3F51B5;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    color: white;
+    background-color: #3F51B5;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    padding: 1px;
+  }
+
+   &__logo:hover {
+    margin-left: auto;
+    color: #3F51B5;
+  }
+
+}
+
+p {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  text-align: left;
+  color: #3F51B5;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+/*
+A sintaxe `&__title` é utilizada em conjunto com o pré-processador SCSS para indicar que
+a regra de estilo se aplica ao elemento filho `title` do elemento pai que possui a classe `example-card`.
+
+O `&` é um recurso do SCSS que se refere ao elemento pai, ou seja, ao elemento que possui a
+classe `example-card`. Dessa forma, `&__title` significa que a regra de estilo se aplica
+ao elemento filho `title` do elemento pai `example-card`.
+
+Essa sintaxe é útil para evitar a repetição de código e tornar o código mais legível
+e organizado. Além disso, ela segue a convenção de nomenclatura do BEM, onde `__` é utilizado
+para separar o nome do elemento do nome do bloco.
+
+
+
+Nesse caso a mat-form-field class="example-card__full-width"> exemple seria Block ,
+Element card_full e width seriaModifier o correto a dizer.
+
+Sim, você está correto! No caso do elemento `mat-form-field`, a classe BEM seria `example-card__full-width`,
+onde `example-card` é o nome do bloco, `full-width` é o nome do elemento e não há modificador. Já na classe
+OCSCSS, a classe seria `.example-card__full-width`, seguindo a mesma convenção de nomenclatura.
+
+Essa classe indica que o elemento `mat-form-field` faz parte do componente `example-card` e tem a largura completa (`full-width`).
+
+*/
